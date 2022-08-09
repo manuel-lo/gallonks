@@ -27,9 +27,15 @@
             display: flex;
             font-family: 'Staatliches', cursive;
             color: white;
+            list-style-type: none;
         }
         .nav-li{
             margin-left: 30px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+
         }
         .logo{
             color: white;
@@ -48,6 +54,13 @@
             grid-auto-rows: 1fr 1fr 1fr 1fr;
             margin-top: 50px;
         }
+        .menu2-container{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr 1fr 1fr 1fr;
+            margin-top: 50px;
+        }
         .titulo{
             color: red;
             font-family: 'Oleo Script', cursive;
@@ -62,11 +75,27 @@
             margin-bottom: 0;
             display: flex;
             justify-content: space-around;
-
+            width: 100%;
+            /*132.6 x 98*/
+        }
+        .producto-descripcion{
+            width: 90%;
+        }
+        .nombre-producto{
+            /*132.6 x 30*/
+            margin: 0;
+            margin-top: 10px;
+            margin-left: 20px;
+            text-align: left;
         }
         .descripcion{
             font-weight: 200;
+            margin: 0;
             margin-top: 4px;
+            height: 65px;
+            width: 90%;
+            margin-left: 20px;
+            text-align: left;
         }
         .precio{
             width: 50px;
@@ -74,7 +103,17 @@
             border-radius: 50%;
             background: red;
             margin-top: 15px;
-            margin-left: 20px;
+           /* margin-left: 20px;*/
+            margin-right: 50px;
+        }
+        footer{
+            background: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            font-family: 'Quicksand', sans-serif;
+            justify-content: center;
+
         }
     </style>
 </head>
@@ -86,9 +125,9 @@
         </div>
         <nav>
             <ul>
-                <li class="nav-li">Menu</li>
-                <li class="nav-li">Home</li>
-                <li class="nav-li">Cuenta</li>
+                <li class="nav-li"><a href="home.html">Home </a></li>
+                <li class="nav-li"><a href="index.html">Menu </a> </li>
+                <li class="nav-li"><a href="promociones.html">Promociones</a></li>
             </ul>
         </nav>
     </div>
@@ -100,9 +139,9 @@
         <div class="titulo">Extras</div>
 
         <div class="producto">
-            <div>
-                <p class="producto">Paquete personal</p>
-                <p class="descripcion">250 gr de alitas</p>
+            <div class="producto-descripcion">
+                <p class="nombre-producto">PAQUETE PERSONAL</p>
+                <p class="descripcion">250 gr de alitas con una salsa a elegir.</p>
             </div>
             <div class="precio">
                 <p>$70</p>
@@ -111,20 +150,172 @@
         </div>
 
         <div class="producto">
-            <div>
-                <p class="producto">PAPAS FRITAS</p>
-                <pre class="descripcion">
-                    Deliciosas papar fritas a la francesa
-                    con aderezo ranch.
-                </pre>
+            <div class="producto-descripcion">
+                <p class="nombre-producto">PAPAS FRITAS</p>
+                <p class="descripcion">Deliciosa porcion de papas fritas a la fransesa
+                con aderezo ranch.</p>
             </div>
             <div class="precio">
-                <p>$70</p>
+                <p>$45</p>
             </div>
 
         </div>
 
+        <div class="producto">
+            <div class="producto-descripcion">
+                <p class="nombre-producto">1/2 KG</p>
+                <p class="descripcion">
+                    2 salsas a elegir
+                </p>
+            </div>
+            <div class="precio">
+                <p>$120</p>
+            </div>
+
+        </div>
+
+        <div class="producto">
+            <div class="producto-descripcion">
+                <p class="nombre-producto">AROS DE CEBOLLA</p>
+                <p class="descripcion">
+                    Orden de aros de cebolla empanizados acompañado de aderezo ranch.
+                </p>
+            </div>
+            <div class="precio">
+                <p>$60</p>
+            </div>
+
+        </div>
+
+        <div class="producto">
+            <div class="producto-descripcion">
+                <p class="nombre-producto">1 KG</p>
+                <p class="descripcion">
+                    Alitas para compartir con 2 salsas a elegir.
+                </p>
+            </div>
+            <div class="precio">
+                <p>$190</p>
+            </div>
+
+        </div>
+
+        <div class="producto">
+            <div class="producto-descripcion">
+                <p class="nombre-producto">ADEREZO RANCH</p>
+                <p class="descripcion">
+                    Porcion extra del delicioso aderezo para acompañar tu comida.
+                </p>
+            </div>
+            <div class="precio">
+                <p>$45</p>
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+    <div style="display: flex">
+
+        <div class="menu2-container">
+
+            <div class="titulo">Boneless</div>
+            <div></div>
+
+            <div class="producto">
+                <div class="producto-descripcion">
+                    <p class="nombre-producto">PAQUETE PERSONAL</p>
+                    <p class="descripcion">
+                        250 grs de boneless con una salsa a elegir.
+                    </p>
+                </div>
+                <div class="precio">
+                    <p>$75</p>
+                </div>
+            </div>
+
+
+
+            <div class="producto">
+                <div class="producto-descripcion">
+                    <p class="nombre-producto">1/2 KG</p>
+                    <p class="descripcion">
+                        Boneless para compartir con 2 salsas a elegir.
+                    </p>
+                </div>
+                <div class="precio">
+                    <p>$135</p>
+                </div>
+            </div>
+
+
+
+            <div class="producto">
+                <div class="producto-descripcion">
+                    <p class="nombre-producto">1 KG</p>
+                    <p class="descripcion">
+                        Boneless para compartir con 2 salsas a elegir.
+                    </p>
+                </div>
+                <div class="precio">
+                    <p>$230</p>
+                </div>
+            </div>
+
+
+            <div class="producto">
+                <div class="producto-descripcion">
+                    <p class="descripcion">
+                        Todas las ordenes de alitas y boneless incluyen zanahoria, jicama y aderezo para acompañar
+                    </p>
+                </div>
+
+            </div>
+
+            <div></div>
+
+        </div>
+
+
+        <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 15%">
+
+            <p>
+                <img width="300px" height="300px" src="assets/images/2.png" alt="">
+            </p>
+
+            <p>
+                <img width="300px" height="300px" src="assets/images/1.png" alt="">
+            </p>
+        </div>
+
     </div>
+
+<footer>
+    <div class="direccion" style="display: flex">
+        <img src="assets/icons/icons8-where-50.png" alt="">
+        <p>Azabache 604, col esmeralda SLP</p>
+
+    </div>
+
+    <div class="contacto" style="display: flex; margin-left: 70px">
+        <img src="assets/icons/icons8-whatsapp.svg" alt="">
+        <p>4441040184</p>
+    </div>
+
+    <div class="redes-sociales" style="display: flex; margin-left: 70px">
+        <img src="assets/icons/icons8-facebook-nuevo.svg" alt="">
+        <p>Gallonks</p>
+        <img src="assets/icons/icons8-instagram.svg" alt="">
+        <p>@GALLONKS</p>
+    </div>
+</footer>
+
+
 
 </body>
 </html>
